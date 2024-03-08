@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# React Template with Vite, Vitest, MSW, ESLint, and Prettier
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository serves as a template for a React project using Vite, Vitest, MSW, ESLint, and Prettier.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Vite**: A next-generation frontend tooling. It's fast and lean, delivering an unmatched developer experience.
+- **React**: A JavaScript library for building user interfaces.
+- **Vitest**: A unit testing framework designed for Vite. It provides a simple and fast testing experience.
+- **MSW**: Mock Service Worker (MSW) is an API mocking library that uses Service Workers to intercept actual requests. Ideal for front-end development and testing.
+- **ESLint**: A pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript.
+- **Prettier**: An opinionated code formatter that ensures that all outputted code conforms to a consistent style.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone this repository
+2. Install dependencies with `pnpm install`
+3. Start the development server with `pnpm run dev`
 
-- Configure the top-level `parserOptions` property like this:
+## Testing
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Run `pnpm run test` to execute the unit tests via Vitest.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Mocking
+
+MSW is set up and ready to use in the `src/mocks` directory. Add your handlers there.
+
+## Linting and Formatting
+
+ESLint and Prettier are configured for this project. Run `npm run lint` to check the code for any linting errors.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+MIT
