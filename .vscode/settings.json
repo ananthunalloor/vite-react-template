@@ -1,0 +1,15 @@
+{
+  // Since we have maxlen 100 in ESLint
+  "editor.wordWrapColumn": 100,
+  "editor.rulers": [100],
+  // To solve ESLint and Prettier conflicts and use both
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"],
+  // Increase scrollback to debug unit tests with screen.debug(undefined, Infinity);
+  "terminal.integrated.scrollback": 5000,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

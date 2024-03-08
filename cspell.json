@@ -1,0 +1,30 @@
+{
+  "version": "0.2",
+  "ignorePaths": [
+    "node_modules/**",
+    "dist/**",
+    "coverage/**",
+    "public/**"
+  ],
+  "dictionaryDefinitions": [],
+  "dictionaries": [
+    "en_US",
+    "en-gb",
+    "companies",
+    "softwareTerms",
+    "corp-terms",
+    "misc",
+    "fonts",
+    "html",
+    "css",
+    "typescript",
+    "node",
+    "npm",
+    "filetypes"
+  ],
+  "words": [
+    "nonblock"
+  ],
+  "ignoreWords": [],
+  "import": []
+}
