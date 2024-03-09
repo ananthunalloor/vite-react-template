@@ -23,7 +23,8 @@
     "filetypes"
   ],
   "words": [
-    "nonblock"
+    "nonblock",
+    "tanstack"
   ],
   "ignoreWords": [],
   "import": []
